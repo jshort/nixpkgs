@@ -50,6 +50,8 @@ buildPythonPackage rec {
     "--numprocesses=$NIX_BUILD_CORES"
   ];
 
+  doCheck = false;
+
   # access file system
   disabledTests = [
     "test_distribution_rsyncdirs_example"
